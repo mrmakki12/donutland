@@ -1,0 +1,29 @@
+li {
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #F544BD;
+    font-weight: bold;
+    width: 100%;
+}
+
+nav li {
+    color: white;
+    padding: 10px;
+    margin: 10px 10px;
+    transition: all ease-in-out 0.3s;
+}
+
+nav li:hover {
+    color: #F544BD;
+    background: white;
+    border-radius: 10px;
+}
+
+
+
+
+

@@ -1,0 +1,28 @@
+.popup-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 100px;
+    background-color: white;
+    padding: 30px;
+    left: calc(50% - 225px);
+    width: 450px;
+    height: 350px;
+    border-radius: 10px;
+    border: 5px solid #B106E0;
+}
+
+.order-complete-header {
+    color: #B106E0;
+    font-weight: bold;
+    text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+    .popup-container {
+        width: 250px;
+        height: 450px;
+        left: calc(50% - 125px);
+    }
+}

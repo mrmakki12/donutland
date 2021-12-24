@@ -1,0 +1,161 @@
+.donuts-container {
+    margin-top: 100px;
+    width: inherit;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    'donut0 donut1 donut2'
+    'donut3 donut4 donut5'
+    'donut6 donut7 donut8';
+    background-color: #F544BD;
+    padding: 75px;
+    gap: 20px;
+}
+
+.donut-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.donut0,
+.donut1,
+.donut2,
+.donut3,
+.donut4,
+.donut5,
+.donut6,
+.donut7,
+.donut8 {
+    width: 375px;
+    height: 545px;
+    border: 5px solid #B106E0;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.image-container {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    height: 325px;
+    width: 325px;
+}
+
+.description-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    background-color: #B106E0;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.name,
+.price,
+button {
+    font-weight: bold;
+}
+
+.name, 
+button {
+    font-size: 1.2rem;
+}
+
+button {
+    width: 100%;
+    margin-top: 1em;
+    background: none;
+    border: none;
+    color: white;
+    transition: all ease-in-out 0.3s;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #B106E0;
+    border-radius: 10px;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+@media screen and (max-width: 400px) {
+
+    .donut0,
+    .donut1,
+    .donut2,
+    .donut3,
+    .donut4,
+    .donut5,
+    .donut6,
+    .donut7,
+    .donut8 {
+        width: 275px;
+        height: 500px;
+    }
+
+    .donuts-container {
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'donut0'
+        'donut1' 
+        'donut2'
+        'donut3'
+        'donut4' 
+        'donut5'
+        'donut6' 
+        'donut7' 
+        'donut8';
+        background-color: #F544BD;
+        justify-content: center;
+    }
+
+    .image { 
+        height: 250px;
+        width: 250px;
+    }
+
+
+}
+
+@media screen and (min-width: 401px) and (max-width: 800px) {
+
+    .donuts-container {
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        'donut0 donut1' 
+        'donut2 donut3'
+        'donut4 donut5'
+        'donut6 donut7' 
+        'donut8 donut8';
+        justify-content: center;
+        width: 100%;
+    }
+
+    .donut0,
+    .donut1,
+    .donut2,
+    .donut3,
+    .donut4,
+    .donut5,
+    .donut6,
+    .donut7,
+    .donut8 {
+        width: 350px;
+        height: 550px;
+    }
+ 
+}
